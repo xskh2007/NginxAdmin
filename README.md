@@ -20,5 +20,5 @@ Next work
 
 Screenshots
 ========
-![data](/media/images/data.jpg)
+![data](/media/images/NginxAdmin1.jpg)
 
