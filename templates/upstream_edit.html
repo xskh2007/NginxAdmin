@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8>
+<title>PyRedisAdmin</title>
+ %include site_media.html media_prefix=media_prefix
+
+    <script>
+
+    function save() {
+        upstreams_name=treeNode.name;
+        upstreams=$('#upstreams').val();
+        $.post("/upstream_submit",{upstreams:upstreams_name},function(result){
+           alert(result);
+  });
+  	}
+    </script>
+</head>
+<body>
+<div class="form-group">
+                  <label>upstream:{{ upstream_name }}</label>
+                  <textarea id="upstreams" class="form-control" rows={{ rows }} placeholder="{{ upstream_value}}">{{ upstream_value}}</textarea>
+</div>
+  <div class="box-footer">
+                <button type="button" class="btn btn-primary" onclick="save()">save</button>
+              </div>
+</body>
+</html>

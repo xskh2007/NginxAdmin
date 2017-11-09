@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8>
+<title>PyRedisAdmin</title>
+
+ %include site_media.html media_prefix=media_prefix
+
+</head>
+<body>
+	<button class="btn" id="moniter">{{ trans('Open the monitor') }}</button>
+	<script>
+		var timer;
+		var flag = true;
+		$("#moniter").click(
+		  function () {
+		  	if (flag){
+		  		flag = false;
+			  	$(this).text("Close the monitor");
+			    timer = setInterval(function () { 
+					 $("#out_html").load(window.location.href+"&refmodel=on");
+				}, 1500); 
+			}else{
+				flag = true;
+			    $(this).text("Open the monitor");
+				clearInterval(timer);
+			}
+		  }); 
+		
+		function renameKey(url,val){
+			newkey = window.prompt('Input',val);
+			if (newkey){
+				window.location.href = url + '&new='+newkey;
+			}
+		}
+		function edit(url,value){
+			newkey = window.prompt('Input',value);
+			if (newkey){
+				window.location.href = url + '&new='+newkey;
+			}
+		}
+		function add(url,type){
+			if (type == 'list' || type == 'set') {
+				value = window.prompt('Input', '');
+				if (value) {
+					window.location.href = url + '&value=' + value;
+				}
+			}
+			else 
+				if (type == 'hash') {
+					name = window.prompt('Input the name', '');
+					if (!(name=="" || name==null)) {
+						value = window.prompt('Input the value', '');
+						if (value) {
+							window.location.href = url + '&name=' + name + '&value=' + value;
+						}
+					}
+				}
+				else 
+					if (type == 'zset') {
+						score = window.prompt('Input the score', '');
+						if (score) {
+							value = window.prompt('Input the value', '');
+							if (value) {
+								window.location.href = url + '&score=' + score + '&value=' + value;
+							}
+						}
+					}
+		}
+		function changeTTL(url,val){
+			newttl = window.prompt('Input',val);
+			if (newttl){
+				window.location.href = url + '&new='+newttl;
+			}
+		}
+	</script>
+<div id = "out_html">
+{{! out_html }}
+</div>
+</body>
+</html>

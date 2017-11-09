@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+
+	<TITLE> ZTREE DEMO - Simple Data</TITLE>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+    %include site_media.html media_prefix=media_prefix
+
+	<link rel="stylesheet" href="/{{media_prefix}}/zTree_v3/css/demo.css" type="text/css">
+	<link rel="stylesheet" href="/{{media_prefix}}/zTree_v3/css/zTreeStyle/zTreeStyle.css" type="text/css">
+	<script type="text/javascript" src="/{{media_prefix}}/zTree_v3/js/jquery-1.4.4.min.js"></script>
+	<script type="text/javascript" src="/{{media_prefix}}/zTree_v3/js/jquery.ztree.core.js"></script>
+	<!--  <script type="text/javascript" src="../../../js/jquery.ztree.excheck.js"></script>
+	  <script type="text/javascript" src="../../../js/jquery.ztree.exedit.js"></script>-->
+	<SCRIPT type="text/javascript">
+
+        function onClick(event, treeId, treeNode, clickFlag) {
+			if (!treeNode.isParent){
+			    var key_type= treeNode.getParentNode().name
+                if (key_type=="upstream"){
+			        parent.document.getElementById("nginx_view").src="/upstream_edit?upstream_name="+treeNode.name;
+                }
+                else if  (key_type=="servers"){
+                    parent.document.getElementById("nginx_view").src="/server_edit?server_name="+treeNode.name;
+                }
+			}
+		}
+
+
+		var setting = {
+			data: {
+				simpleData: {
+					enable: true
+				}
+			},
+			callback: {
+						onClick: onClick
+					}
+		};
+
+		var zNodes ={{ nginx_tree }};
+
+		$(document).ready(function(){
+			$.fn.zTree.init($("#treeDemo"), setting, zNodes);
+		});
+
+	</SCRIPT>
+ </HEAD>
+
+<BODY>
+
+
+
+
+
+
+        <div class="accordion-group">
+		    <div class="accordion-heading">
+	         <div id="search" class="control-group" style="font-size:large; padding-top:10px; padding-left:10px">
+			 	nginxAdmin
+				<div style=" text-align:right; font-size:small; margin-right:5px; margin-top: 8px"><a href="/overview" target="db_view">{{ trans('overview') }}</a>  <a href="/auth/logout" target="_top">退出</a></div>
+		     </div>
+		    </div>
+		    <div class="accordion-body">
+				<div class="accordion-inner">
+					<div id="treeDemo" class="ztree"></div>
+				</div>
+		    </div>
+		</div>
+
+</BODY>
+</HTML>

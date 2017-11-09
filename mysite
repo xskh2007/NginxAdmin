@@ -1,0 +1,33 @@
+    upstream prod.niubangold.com {
+        server 172.16.2.138:8080;
+        server 172.16.2.213:8080;
+    }
+
+    server {
+        listen 80;
+        server_name prod.niubangold.com;
+
+        location / {
+            proxy_pass         http://prod.niubangold.com;
+            proxy_set_header   Host             $host;
+            proxy_set_header   X-Real-IP        $remote_addr;
+            proxy_set_header   X-Forwarded-For  $proxy_add_x_forwarded_for;
+        }
+    }
+
+
+    ### afsfasdfas
+
+
+    server {
+        listen 80;
+        server_name prod.niubangold.com;
+
+        location / {
+            proxy_pass         http://prod.niubangold.com;
+            proxy_set_header   Host             $host;
+            proxy_set_header   X-Real-IP        $remote_addr;
+            proxy_set_header   X-Forwarded-For  $proxy_add_x_forwarded_for;
+        }
+    }
+

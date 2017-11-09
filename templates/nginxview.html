@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8>
+<title>PyRedisAdmin</title>
+ %include site_media.html media_prefix=media_prefix
+</head>
+<body>
+<div class="server" style="float:left; margin-left:20px">
+                  <h2>nginx信息</h2>
+                  <table class="table table-bordered table-striped" style="max-width: 400px">
+					<tbody>
+                      <tr><td><div>nginx version:</div></td><td><div>{{nginx_version}}</div></td></tr>
+                      <tr><td><div>当前连接数:</div></td><td><div>{{nginx_cons}}</div></td></tr>
+                      <tr><td><div>Last save:</div></td><td><div>{{last_save}}</div></td></tr>
+                      <tr><td><div>Uptime:</div></td><td><div>{{uptime_in_seconds}}</div></td></tr>
+                      <tr><td><div>Last save:</div></td><td><div>{{last_save_time}}</div></td></tr>
+					</tbody>
+                  </table>
+</div>
+</body>
+</html>
