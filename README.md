@@ -21,5 +21,5 @@ Next work
 Screenshots
 ========
 
-![Screenshot](https://raw.githubusercontent.com/xskh2007/xskh2007.github.io/master/images/nginxadmin/NginxAdmin1.jpg) 
+![Screenshot](https://raw.githubusercontent.com/xskh2007/xskh2007.github.io/master/images/nginxadmin/nginxadmin1.jpg) 
 
