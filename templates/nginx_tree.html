@@ -18,11 +18,12 @@
         function onClick(event, treeId, treeNode, clickFlag) {
 			if (!treeNode.isParent){
 			    var key_type= treeNode.getParentNode().name
+				var file_name=treeNode.getParentNode().getParentNode().name
                 if (key_type=="upstream"){
-			        parent.document.getElementById("nginx_view").src="/upstream_edit?upstream_name="+treeNode.name;
+			        parent.document.getElementById("nginx_view").src="/upstream_edit?upstream_name="+treeNode.name+"&file_name="+file_name;
                 }
                 else if  (key_type=="servers"){
-                    parent.document.getElementById("nginx_view").src="/server_edit?server_name="+treeNode.name;
+                    parent.document.getElementById("nginx_view").src="/server_edit?server_name="+treeNode.name+"&file_name="+file_name;
                 }
 			}
 		}
@@ -42,7 +43,7 @@
 		var zNodes ={{ nginx_tree }};
 
 		$(document).ready(function(){
-			$.fn.zTree.init($("#treeDemo"), setting, zNodes);
+			$.fn.zTree.init($("#nginxtree"), setting, zNodes);
 		});
 
 	</SCRIPT>
@@ -64,7 +65,7 @@
 		    </div>
 		    <div class="accordion-body">
 				<div class="accordion-inner">
-					<div id="treeDemo" class="ztree"></div>
+					<div id="nginxtree" class="ztree"></div>
 				</div>
 		    </div>
 		</div>

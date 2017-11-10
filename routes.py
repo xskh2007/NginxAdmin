@@ -76,31 +76,31 @@ def nginxview():
 @auth_required()
 def upstream_edit():
     upstream_name = request.GET.get('upstream_name', '')
-    # print upstream_name,"qqqqqqqqqqqqqqqqqqqqqqqqqqqqq"
-    c = nginx.loadf("modules.conf")
+    file_name = request.GET.get('file_name', '')
+    path_file_name = config.nginx_conf_path + file_name
+    c = nginx.loadf(path_file_name)
     u = c.filter(btype="Upstream", name=upstream_name)
     keys=u[0].keys
     rows=len(keys)
     upstream_value=""
     for i in keys:
         upstream_value= upstream_value+i.name+" "+i.value+"\r\n"
-    return template('upstream_edit',upstream_name=upstream_name,upstream_value=upstream_value,rows=rows+5,media_prefix=media_prefix)
+    return template('upstream_edit',upstream_name=upstream_name,upstream_value=upstream_value,path_file_name=path_file_name,rows=rows+5,media_prefix=media_prefix)
 
 
 @route('/upstream_submit',method='POST')
 @auth_required()
 def upstream_submit():
-    upstreams=request.POST.get('upstreams_name', '')
-    print upstreams
-
-    return upstreams
+    upstream_value=request.POST.get('upstream_value', '')
+    return upstream_value
 
 @route('/server_edit')
 @auth_required()
 def server_edit():
     server_name = request.GET.get('server_name', '')
-    print server_name
-    c = nginx.loadf("modules.conf")
+    file_name = request.GET.get('file_name', '')
+    path_file_name=config.nginx_conf_path+file_name
+    c = nginx.loadf(path_file_name)
     servers = c.filter("Server")
     for i in servers:
         if server_name==i.filter("key","server_name")[0].value:
@@ -114,7 +114,16 @@ def server_edit():
     # upstream_value=""
     # for i in keys:
     #     upstream_value= upstream_value+i.name+" "+i.value+"\r\n"
-    return template('server_edit',server_name=server_name,server_value=server_value,rows=rows+5,media_prefix=media_prefix)
+    return template('server_edit',server_name=server_name,server_value=server_value,path_file_name=path_file_name,rows=rows+5,media_prefix=media_prefix)
+
+
+
+@route('/server_submit',method='POST')
+@auth_required()
+def server_submit():
+    server_value=request.POST.get('server_value', '')
+    return server_value
+
 
 
 @route('/')

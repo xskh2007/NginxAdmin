@@ -8,9 +8,8 @@
     <script>
 
     function save() {
-        upstreams_name=treeNode.name;
-        upstreams=$('#upstreams').val();
-        $.post("/upstream_submit",{upstreams:upstreams_name},function(result){
+        server_value=$('#server').val();
+        $.post("/server_submit",{server_value:server_value},function(result){
            alert(result);
   });
   	}
@@ -24,6 +23,7 @@
 </head>
 <body>
 <div class="form-group">
+                  <label>所在文件路径:{{ path_file_name }}</label>
                   <label>server:{{ server_name }}</label>
                   <textarea id="server" class="form-control" rows={{ rows }}  placeholder="{{ server_value}}">{{ server_value}}</textarea>
 </div>
