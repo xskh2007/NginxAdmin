@@ -9,7 +9,9 @@
 
     function save() {
         upstream_value=$('#upstreams').val();
-        $.post("/upstream_submit",{upstream_value:upstream_value},function(result){
+        upstream_name=$("label#upstream_name").text();
+        path_file_name=$("label#path_file_name").text();
+        $.post("/upstream_submit",{upstream_value:upstream_value,path_file_name:path_file_name,upstream_name:upstream_name},function(result){
            alert(result);
   });
   	}
@@ -17,8 +19,8 @@
 </head>
 <body>
 <div class="form-group">
-                  <label>所在文件路径:{{ path_file_name }}</label>
-                  <label>upstream:{{ upstream_name }}</label>
+                  <label id="path_file_name">{{ path_file_name }}</label>
+                  <label id="upstream_name">{{ upstream_name }}</label>
                   <textarea id="upstreams" class="form-control" rows={{ rows }} placeholder="{{ upstream_value}}">{{ upstream_value}}</textarea>
 </div>
   <div class="box-footer">

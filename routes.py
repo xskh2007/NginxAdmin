@@ -92,6 +92,23 @@ def upstream_edit():
 @auth_required()
 def upstream_submit():
     upstream_value=request.POST.get('upstream_value', '')
+    upstream_name=request.POST.get('upstream_name', '')
+    path_file_name = request.POST.get("path_file_name", "")
+    c = nginx.loadf(path_file_name)
+    search_upstream=c.filter(btype="Upstream", name=upstream_name)
+
+    if len(search_upstream):
+        u=search_upstream[0]
+        c.remove(u)
+        for line in upstream_value.split("\n"):
+            print line.split(" ")
+    else:
+        for line in upstream_value:
+            print line,"不存在and add,2222"
+        # new_u = nginx.Upstream(upstream_name, nginx.Key('server', '111111111:8080'))
+
+    # print u.children
+    print type(upstream_value),path_file_name,upstream_name
     return upstream_value
 
 @route('/server_edit')
@@ -122,6 +139,14 @@ def server_edit():
 @auth_required()
 def server_submit():
     server_value=request.POST.get('server_value', '')
+    path_file_name=request.POST.get("path_file_name","")
+    c = nginx.loadf(path_file_name)
+    # myserver=nginx.loads(server_value)
+
+    # print "remove ok"
+    # c.add(myserver)
+    # nginx.dumpf(c, 'test.conf')
+    # print myserver
     return server_value
 
 
