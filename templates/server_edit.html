@@ -8,9 +8,10 @@
     <script>
 
     function save() {
+        server_name=$("label#server_name").text();
         server_value=$('#server').val();
         path_file_name=$("label#path_file_name").text();
-        $.post("/server_submit",{server_value:server_value,path_file_name:path_file_name},function(result){
+        $.post("/server_submit",{server_name:server_name,server_value:server_value,path_file_name:path_file_name},function(result){
            alert(result);
   });
   	}
@@ -25,7 +26,7 @@
 <body>
 <div class="form-group">
                   <label id="path_file_name">{{ path_file_name }}</label>
-                  <label id="server_name">server:{{ server_name }}</label>
+                  <label id="server_name">{{ server_name }}</label>
                   <textarea id="server" class="form-control" rows={{ rows }}  placeholder="{{ server_value}}">{{ server_value}}</textarea>
 </div>
   <div class="box-footer">

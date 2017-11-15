@@ -14,9 +14,12 @@ Quick start
 2. 配置config.py,加入要管理的nginx的配置文件路径等
 3. 运行: python routes.py
 
-Next work
+注意点：
 ========
-看情况再说
+1、大括号前后需要有空格
+2、同一个配置文件,同一个server_name，只能能写一个server(在nginx里面其实只要端口不一样是可以写多个server的，但是做起来比较麻烦暂时不支持)
+
+
 
 Screenshots
 ========

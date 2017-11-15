@@ -100,14 +100,21 @@ def upstream_submit():
     if len(search_upstream):
         u=search_upstream[0]
         c.remove(u)
+        new_u = nginx.Upstream(upstream_name, )
         for line in upstream_value.split("\n"):
-            print line.split(" ")
-    else:
-        for line in upstream_value:
-            print line,"不存在and add,2222"
-        # new_u = nginx.Upstream(upstream_name, nginx.Key('server', '111111111:8080'))
+            if len(line.split(" "))>=	2:
+                # print line.split(" ")
+                new_u.add(nginx.Key(line.split(" ")[0], line.split(" ")[1]))
 
-    # print u.children
+    else:
+        new_u = nginx.Upstream(upstream_name, )
+        for line in upstream_value.split("\n"):
+            if len(line.split(" ")) >= 2:
+                # print line.split(" ")
+                new_u.add(nginx.Key(line.split(" ")[0], line.split(" ")[1]))
+    c.add(new_u)
+    nginx.dumpf(c, path_file_name)
+
     print type(upstream_value),path_file_name,upstream_name
     return upstream_value
 
@@ -138,14 +145,20 @@ def server_edit():
 @route('/server_submit',method='POST')
 @auth_required()
 def server_submit():
+    server_name=request.POST.get('server_name', '')
     server_value=request.POST.get('server_value', '')
     path_file_name=request.POST.get("path_file_name","")
     c = nginx.loadf(path_file_name)
-    # myserver=nginx.loads(server_value)
-
+    servers = c.filter("Server")
+    for i in servers:
+        if server_name == i.filter("key", "server_name")[0].value:
+            c.remove(i)
+    new_c=nginx.loads(server_value)
+    new_server=new_c.filter('Server')[0]
+    c.add(new_server)
     # print "remove ok"
     # c.add(myserver)
-    # nginx.dumpf(c, 'test.conf')
+    nginx.dumpf(c, path_file_name)
     # print myserver
     return server_value
 
