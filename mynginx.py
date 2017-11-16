@@ -1,13 +1,18 @@
 import nginx
-c = nginx.Conf()
-u = nginx.Upstream('php',)
-u.add(nginx.Key('server', '888888888:8080'))
-u.add(nginx.Key('server', '999999999:8080'))
-c.add(u)
 
-nginx.dumpf(c, 'test.conf')
+c = nginx.loadf("test")
+nginx.dumpf(c,"test2")
 
 
+# c = nginx.Conf()
+# u = nginx.Upstream('php',)
+# u.add(nginx.Key('server', '888888888:8080'))
+# u.add(nginx.Key('server', '999999999:8080'))
+# c.add(u)
+#
+# nginx.dumpf(c, 'test.conf')
+#
+#
 
 
 # c = nginx.loadf("modules.conf")

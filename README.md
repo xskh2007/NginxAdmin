@@ -1,7 +1,7 @@
 NginxAdmin
 ============
 
-A web GUI for nginx configuration files management
+国内第一个开源nginx配置文件管理后台
 
 About
 ========
@@ -16,8 +16,8 @@ Quick start
 
 注意点：
 ========
-1、大括号前后需要有空格
-2、同一个配置文件,同一个server_name，只能能写一个server(在nginx里面其实只要端口不一样是可以写多个server的，但是做起来比较麻烦暂时不支持)
+1.大括号前后需要有空格
+2.同一个配置文件,同一个server_name，只能能写一个server(在nginx里面其实只要端口不一样是可以写多个server的，但是做起来比较麻烦暂时不支持)
 
 
 
@@ -26,3 +26,6 @@ Screenshots
 
 ![Screenshot](https://raw.githubusercontent.com/xskh2007/xskh2007.github.io/master/images/nginxadmin/nginxadmin1.jpg) 
 
+
+qq群:391096485
+========
