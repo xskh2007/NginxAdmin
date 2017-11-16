@@ -17,6 +17,8 @@ import json
 import os
 import glob
 
+import commands
+
 auth_required = authenticator(login_url='/auth/login')
 
 
@@ -161,6 +163,14 @@ def server_submit():
     nginx.dumpf(c, path_file_name)
     # print myserver
     return server_value
+
+
+@route('/nginx_reload')
+@auth_required()
+def nginx_reload():
+    status, output = commands.getstatusoutput(config.nginx_cmd+"-s reload")
+    print status,output
+    return template('shell',media_prefix=media_prefix)
 
 
 

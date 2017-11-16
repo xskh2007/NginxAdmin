@@ -15,6 +15,13 @@
 	  <script type="text/javascript" src="../../../js/jquery.ztree.exedit.js"></script>-->
 	<SCRIPT type="text/javascript">
 
+		function nginx_gaiyao() {
+			parent.document.getElementById("nginx_view").src="/nginxview";
+        }
+		function nginx_reload() {
+			parent.document.getElementById("nginx_view").src="/nginx_reload";
+        }
+
         function onClick(event, treeId, treeNode, clickFlag) {
 			if (!treeNode.isParent){
 			    var key_type= treeNode.getParentNode().name
@@ -63,8 +70,9 @@
 				<div style=" text-align:right; font-size:small; margin-right:5px; margin-top: 8px">
 					检测配置
 					重启
-					重载
-					<a href="/nginxview" target="db_view">{{ trans('overview') }}</a>
+
+					<div  id="nginx_reload" onclick="nginx_reload()" style="display:inline">重载</div>
+					<div  id="nginx_gaiyao" onclick="nginx_gaiyao()" style="display:inline">概要</div>
 					<a href="/auth/logout" target="_top">退出</a>
 				</div>
 		     </div>

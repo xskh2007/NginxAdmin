@@ -2,6 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9d21b8d-f665-477e-93be-a5eba57879a2" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/shell.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.py" afterPath="$PROJECT_DIR$/config.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nginx_conf/bank.conf" afterPath="$PROJECT_DIR$/nginx_conf/bank.conf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes.py" afterPath="$PROJECT_DIR$/routes.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/nginx_tree.html" afterPath="$PROJECT_DIR$/templates/nginx_tree.html" />
     </list>
     <ignored path="NginxAdmin.iws" />
@@ -16,7 +21,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/NginxAdmin_master$routes.coverage" NAME="routes Coverage Results" MODIFIED="1510198315514" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NginxAdmin$mynginx.coverage" NAME="mynginx Coverage Results" MODIFIED="1510796959506" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/NginxAdmin$routes.coverage" NAME="routes Coverage Results" MODIFIED="1510803779940" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NginxAdmin$routes.coverage" NAME="routes Coverage Results" MODIFIED="1510818285062" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -27,11 +32,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="routes.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="routes.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="60" column="90" lean-forward="false" selection-start-line="60" selection-start-column="78" selection-end-line="60" selection-end-column="90" />
+            <state relative-caret-position="361">
+              <caret line="172" column="26" lean-forward="false" selection-start-line="172" selection-start-column="26" selection-end-line="172" selection-end-column="26" />
               <folding>
                 <element signature="e#16#105#0" expanded="true" />
               </folding>
@@ -39,11 +44,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="site_media.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/site_media.html">
+      <file leaf-file-name="shell.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/shell.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="133">
+              <caret line="7" column="3" lean-forward="false" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="13" column="39" lean-forward="false" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -59,14 +74,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="nginx_tree.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="server_tree.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/server_tree.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-114">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nginx_tree.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/nginx_tree.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="63" column="24" lean-forward="true" selection-start-line="63" selection-start-column="24" selection-end-line="63" selection-end-column="24" />
+            <state relative-caret-position="190">
+              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#BODY#0;n#HTML#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#BODY#0;n#HTML#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#BODY#0;n#HTML#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#BODY#0;n#HTML#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -92,41 +119,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mynginx.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mynginx.py">
+      <file leaf-file-name="server_edit.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/server_edit.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" column="20" lean-forward="false" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="modules.conf" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nginx_conf/modules.conf">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2394">
-              <caret line="126" column="34" lean-forward="false" selection-start-line="126" selection-start-column="25" selection-end-line="126" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bank.conf" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nginx_conf/bank.conf">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="15" lean-forward="false" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mycat.conf" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nginx_conf/mycat.conf">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state relative-caret-position="285">
+              <caret line="15" column="5" lean-forward="true" selection-start-line="13" selection-start-column="8" selection-end-line="15" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -172,7 +169,6 @@
         <option value="$PROJECT_DIR$/test.conf" />
         <option value="$PROJECT_DIR$/test2.conf" />
         <option value="$PROJECT_DIR$/templates/server_edit.html" />
-        <option value="$PROJECT_DIR$/routes.py" />
         <option value="$PROJECT_DIR$/nginx_conf/modules.conf" />
         <option value="$PROJECT_DIR$/nginx_conf/camera.conf" />
         <option value="$PROJECT_DIR$/nginx_conf/mycat.conf" />
@@ -182,7 +178,10 @@
         <option value="$PROJECT_DIR$/mynginx.py" />
         <option value="$PROJECT_DIR$/test" />
         <option value="$PROJECT_DIR$/test2" />
+        <option value="$PROJECT_DIR$/config.py" />
         <option value="$PROJECT_DIR$/templates/nginx_tree.html" />
+        <option value="$PROJECT_DIR$/routes.py" />
+        <option value="$PROJECT_DIR$/templates/shell.html" />
       </list>
     </option>
   </component>
@@ -253,6 +252,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NginxAdmin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NginxAdmin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mole" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -264,6 +277,11 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="C:/Python" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\xuexi\NginxAdmin\templates" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -495,7 +513,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15609756" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25691056" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25296736" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -533,38 +551,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/nginx_conf/bank.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="15" lean-forward="false" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nginx_conf/mycat.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nginx_conf/camera.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="45" lean-forward="false" selection-start-line="13" selection-start-column="45" selection-end-line="13" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/server_edit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="19" lean-forward="false" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mynginx.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="589">
@@ -751,14 +737,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/server_edit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="19" lean-forward="false" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test2.conf" />
     <entry file="file://$PROJECT_DIR$/modules.conf" />
     <entry file="file://$PROJECT_DIR$/nginx_conf/camera.conf">
@@ -812,16 +790,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="60" column="90" lean-forward="false" selection-start-line="60" selection-start-column="78" selection-end-line="60" selection-end-column="90" />
-          <folding>
-            <element signature="e#16#105#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/site_media.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -846,6 +814,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="39" lean-forward="false" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/server_edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="5" lean-forward="true" selection-start-line="13" selection-start-column="8" selection-end-line="15" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mole/template.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6349">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/nginxview.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -856,11 +848,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/nginx_tree.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="63" column="24" lean-forward="true" selection-start-line="63" selection-start-column="24" selection-end-line="63" selection-end-column="24" />
+        <state relative-caret-position="190">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#BODY#0;n#HTML#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#BODY#0;n#HTML#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#BODY#0;n#HTML#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#BODY#0;n#HTML#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/server_tree.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-114">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/shell.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="3" lean-forward="false" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="172" column="26" lean-forward="false" selection-start-line="172" selection-start-column="26" selection-end-line="172" selection-end-column="26" />
+          <folding>
+            <element signature="e#16#105#0" expanded="true" />
           </folding>
         </state>
       </provider>

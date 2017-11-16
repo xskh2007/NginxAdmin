@@ -11,4 +11,4 @@ admin_user = 'admin'
 admin_pwd = 'admin'
 
 nginx_conf_path="nginx_conf/"
-nginx_cmd="/usr/local/nginx/sbin/nginx -s"
+nginx_cmd="/usr/local/nginx/sbin/nginx "
