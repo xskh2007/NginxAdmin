@@ -21,6 +21,12 @@
 		function nginx_reload() {
 			parent.document.getElementById("nginx_view").src="/nginx_reload";
         }
+		function nginx_restart() {
+			parent.document.getElementById("nginx_view").src="/nginx_restart";
+        }
+		function nginx_check() {
+			parent.document.getElementById("nginx_view").src="/nginx_check";
+        }
 
         function onClick(event, treeId, treeNode, clickFlag) {
 			if (!treeNode.isParent){
@@ -68,11 +74,9 @@
 	         <div id="search" class="control-group" style="font-size:large; padding-top:10px; padding-left:10px">
 			 	nginxAdmin
 				<div style=" text-align:right; font-size:small; margin-right:5px; margin-top: 8px">
-					检测配置
-					重启
-
-					<div  id="nginx_reload" onclick="nginx_reload()" style="display:inline">重载</div>
-					<div  id="nginx_gaiyao" onclick="nginx_gaiyao()" style="display:inline">概要</div>
+					<div  id="nginx_reload" onclick="nginx_check()" style="display:inline"><a href="#">检测配置</div>
+					<div  id="nginx_reload" onclick="nginx_reload()" style="display:inline"><a href="#">重载</a></div>
+					<div  id="nginx_gaiyao" onclick="nginx_gaiyao()" style="display:inline"><a href="#">概要</a> </div>
 					<a href="/auth/logout" target="_top">退出</a>
 				</div>
 		     </div>
