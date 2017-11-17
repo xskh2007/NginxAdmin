@@ -18,6 +18,7 @@ import os
 import glob
 
 import commands
+import os.path, time
 
 auth_required = authenticator(login_url='/auth/login')
 
@@ -69,12 +70,13 @@ def nginxview():
     configure_arguments_status,configure_arguments=commands.getstatusoutput(config.nginx_cmd+" -V")
     configure_arguments=configure_arguments.split(":")[1]
     nginx_version=nginx_version.split(":")[1]
+    last_save_time=time.ctime(os.path.getctime(config.nginx_cmd))
     return template('nginxview',
                     nginx_version=nginx_version,
                     nginx_cons="1.2.3",
                     last_save="qqqq",
                     uptime_in_seconds="41434",
-                    last_save_time="12123213",
+                    last_save_time=last_save_time,
                     configure_arguments=configure_arguments,
                     media_prefix=media_prefix)
 
