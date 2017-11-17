@@ -189,7 +189,9 @@ def nginx_check():
 @route('/')
 @auth_required()
 def server_view():
-    return template("main", media_prefix=media_prefix)
+    status,nginx_version=commands.getstatusoutput(config.nginx_cmd+" -v")
+    nginx_version=nginx_version.split(":")[1]
+    return template("main",nginx_version=nginx_version, media_prefix=media_prefix)
 
 
 @route('/auth/login', method=['GET', 'POST'])
