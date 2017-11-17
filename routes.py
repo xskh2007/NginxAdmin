@@ -65,7 +65,9 @@ def nginx_tree():
 @route('/nginxview')
 @auth_required()
 def nginxview():
-    status,nginx_version=commands.getstatusoutput(config.nginx_cmd+" -v")
+    nginx_version_status,nginx_version=commands.getstatusoutput(config.nginx_cmd+" -v")
+    configure_arguments_status,configure_arguments=commands.getstatusoutput(config.nginx_cmd+" -V")
+    configure_arguments=configure_arguments.split(":")[1]
     nginx_version=nginx_version.split(":")[1]
     return template('nginxview',
                     nginx_version=nginx_version,
@@ -73,7 +75,7 @@ def nginxview():
                     last_save="qqqq",
                     uptime_in_seconds="41434",
                     last_save_time="12123213",
-                    configure_arguments="qqqq",
+                    configure_arguments=configure_arguments,
                     media_prefix=media_prefix)
 
 

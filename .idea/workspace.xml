@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b9d21b8d-f665-477e-93be-a5eba57879a2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes.py" afterPath="$PROJECT_DIR$/routes.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/nginxview.html" afterPath="$PROJECT_DIR$/templates/nginxview.html" />
     </list>
     <ignored path="NginxAdmin.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,8 +30,8 @@
       <file leaf-file-name="routes.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="75" column="45" lean-forward="false" selection-start-line="75" selection-start-column="41" selection-end-line="75" selection-end-column="45" />
+            <state relative-caret-position="190">
+              <caret line="77" column="59" lean-forward="false" selection-start-line="77" selection-start-column="59" selection-end-line="77" selection-end-column="59" />
               <folding>
                 <element signature="e#16#105#0" expanded="true" />
               </folding>
@@ -860,8 +859,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="75" column="45" lean-forward="false" selection-start-line="75" selection-start-column="41" selection-end-line="75" selection-end-column="45" />
+        <state relative-caret-position="190">
+          <caret line="77" column="59" lean-forward="false" selection-start-line="77" selection-start-column="59" selection-end-line="77" selection-end-column="59" />
           <folding>
             <element signature="e#16#105#0" expanded="true" />
           </folding>
