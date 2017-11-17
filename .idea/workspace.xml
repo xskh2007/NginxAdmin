@@ -31,8 +31,8 @@
       <file leaf-file-name="routes.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="192" column="17" lean-forward="false" selection-start-line="192" selection-start-column="4" selection-end-line="192" selection-end-column="17" />
+            <state relative-caret-position="266">
+              <caret line="75" column="45" lean-forward="false" selection-start-line="75" selection-start-column="41" selection-end-line="75" selection-end-column="45" />
               <folding>
                 <element signature="e#16#105#0" expanded="true" />
               </folding>
@@ -63,8 +63,8 @@
       <file leaf-file-name="nginxview.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/nginxview.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="12" column="84" lean-forward="false" selection-start-line="12" selection-start-column="71" selection-end-line="12" selection-end-column="84" />
+            <state relative-caret-position="323">
+              <caret line="17" column="96" lean-forward="false" selection-start-line="17" selection-start-column="77" selection-end-line="17" selection-end-column="96" />
               <folding />
             </state>
           </provider>
@@ -852,16 +852,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/nginxview.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="84" lean-forward="false" selection-start-line="12" selection-start-column="71" selection-end-line="12" selection-end-column="84" />
+        <state relative-caret-position="323">
+          <caret line="17" column="96" lean-forward="false" selection-start-line="17" selection-start-column="77" selection-end-line="17" selection-end-column="96" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="192" column="17" lean-forward="false" selection-start-line="192" selection-start-column="4" selection-end-line="192" selection-end-column="17" />
+        <state relative-caret-position="266">
+          <caret line="75" column="45" lean-forward="false" selection-start-line="75" selection-start-column="41" selection-end-line="75" selection-end-column="45" />
           <folding>
             <element signature="e#16#105#0" expanded="true" />
           </folding>

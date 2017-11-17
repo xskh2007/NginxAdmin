@@ -65,12 +65,15 @@ def nginx_tree():
 @route('/nginxview')
 @auth_required()
 def nginxview():
+    status,nginx_version=commands.getstatusoutput(config.nginx_cmd+" -v")
+    nginx_version=nginx_version.split(":")[1]
     return template('nginxview',
-                    nginx_version="20170101",
+                    nginx_version=nginx_version,
                     nginx_cons="1.2.3",
                     last_save="qqqq",
                     uptime_in_seconds="41434",
                     last_save_time="12123213",
+                    configure_arguments="qqqq",
                     media_prefix=media_prefix)
 
 
@@ -189,9 +192,8 @@ def nginx_check():
 @route('/')
 @auth_required()
 def server_view():
-    status,nginx_version=commands.getstatusoutput(config.nginx_cmd+" -v")
-    nginx_version=nginx_version.split(":")[1]
-    return template("main",nginx_version=nginx_version, media_prefix=media_prefix)
+
+    return template("main", media_prefix=media_prefix)
 
 
 @route('/auth/login', method=['GET', 'POST'])
