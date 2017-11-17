@@ -177,14 +177,14 @@ def nginx_reload():
 def nginx_restart():
     status, output = commands.getstatusoutput(config.nginx_cmd+"-s reload")
     print status,output
-    return template('shell',media_prefix=media_prefix)
+    return template('shell',status=status,output=output,media_prefix=media_prefix)
 
 @route('/nginx_check')
 @auth_required()
 def nginx_check():
     status, output = commands.getstatusoutput(config.nginx_cmd+"-t")
     print status,output
-    return template('shell',media_prefix=media_prefix)
+    return template('shell',status=status,output=output,media_prefix=media_prefix)
 
 @route('/')
 @auth_required()
