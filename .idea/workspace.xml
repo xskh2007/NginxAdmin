@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9d21b8d-f665-477e-93be-a5eba57879a2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes.py" afterPath="$PROJECT_DIR$/routes.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/nginxview.html" afterPath="$PROJECT_DIR$/templates/nginxview.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="NginxAdmin.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,6 +39,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="3" column="56" lean-forward="false" selection-start-line="3" selection-start-column="56" selection-end-line="3" selection-end-column="56" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="shell.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/shell.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -50,7 +59,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="nginxview.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="nginxview.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/nginxview.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="115">
@@ -175,7 +184,6 @@
         <option value="$PROJECT_DIR$/nginx_conf/mycat.conf" />
         <option value="$PROJECT_DIR$/readme" />
         <option value="$PROJECT_DIR$/nginx_conf/bank.conf" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/mynginx.py" />
         <option value="$PROJECT_DIR$/test" />
         <option value="$PROJECT_DIR$/test2" />
@@ -184,6 +192,7 @@
         <option value="$PROJECT_DIR$/config.py" />
         <option value="$PROJECT_DIR$/routes.py" />
         <option value="$PROJECT_DIR$/templates/nginxview.html" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -721,13 +730,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/readme" />
     <entry file="file://$PROJECT_DIR$/mysite" />
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="17" column="8" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/nginx_conf/modules.conf">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2394">
@@ -806,14 +808,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/shell.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="15" lean-forward="false" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/nginx_tree.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
@@ -836,6 +830,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/nginxview.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="12" column="102" lean-forward="false" selection-start-line="12" selection-start-column="102" selection-end-line="12" selection-end-column="102" />
+          <folding>
+            <element signature="n#style#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/shell.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="15" lean-forward="false" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/routes.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -846,13 +858,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/nginxview.html">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="12" column="102" lean-forward="false" selection-start-line="12" selection-start-column="102" selection-end-line="12" selection-end-column="102" />
-          <folding>
-            <element signature="n#style#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="57">
+          <caret line="3" column="56" lean-forward="false" selection-start-line="3" selection-start-column="56" selection-end-line="3" selection-end-column="56" />
+          <folding />
         </state>
       </provider>
     </entry>
