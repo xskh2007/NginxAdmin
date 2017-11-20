@@ -71,11 +71,13 @@ def nginxview():
     configure_arguments=configure_arguments.split(":")[1]
     nginx_version=nginx_version.split(":")[1]
     last_save_time=time.ctime(os.path.getctime(config.nginx_cmd.rstrip()))
+    status, stime = commands.getstatusoutput("ps -A -opid,stime,etime,args |grep /usr/local/nginx/sbin/nginx|grep -v grep|awk {'print $2'}")
+    status, etime = commands.getstatusoutput("ps -A -opid,stime,etime,args |grep /usr/local/nginx/sbin/nginx|grep -v grep|awk {'print $3'}")
     return template('nginxview',
                     nginx_version=nginx_version,
                     nginx_cons="1.2.3",
-                    last_save="qqqq",
-                    uptime_in_seconds="41434",
+                    stime=stime,
+                    etime=etime,
                     last_save_time=last_save_time,
                     configure_arguments=configure_arguments,
                     media_prefix=media_prefix)
