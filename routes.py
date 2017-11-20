@@ -70,6 +70,7 @@ def nginxview():
     configure_arguments_status,configure_arguments=commands.getstatusoutput(config.nginx_cmd+" -V")
     configure_arguments=configure_arguments.split(":")[1]
     nginx_version=nginx_version.split(":")[1]
+    print config.nginx_cmd
     last_save_time=time.ctime(os.path.getctime(config.nginx_cmd))
     return template('nginxview',
                     nginx_version=nginx_version,
