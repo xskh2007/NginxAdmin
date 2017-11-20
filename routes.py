@@ -68,7 +68,7 @@ def nginx_tree():
 def nginxview():
     nginx_version_status,nginx_version=commands.getstatusoutput(config.nginx_cmd+" -v")
     configure_arguments_status,configure_arguments=commands.getstatusoutput(config.nginx_cmd+" -V")
-    configure_arguments=configure_arguments.split(":")[1]
+    configure_arguments=configure_arguments.split(":")[-1]
     nginx_version=nginx_version.split(":")[1]
     last_save_time=time.ctime(os.path.getctime(config.nginx_cmd.rstrip()))
     status, stime = commands.getstatusoutput("ps -A -opid,stime,etime,args |grep /usr/local/nginx/sbin/nginx|grep -v grep|awk {'print $2'}")
