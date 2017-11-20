@@ -75,7 +75,6 @@ def nginxview():
     status, etime = commands.getstatusoutput("ps -A -opid,stime,etime,args |grep /usr/local/nginx/sbin/nginx|grep -v grep|awk {'print $3'}")
     return template('nginxview',
                     nginx_version=nginx_version,
-                    nginx_cons="1.2.3",
                     stime=stime,
                     etime=etime,
                     last_save_time=last_save_time,
